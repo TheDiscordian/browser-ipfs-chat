@@ -111,7 +111,7 @@
 				setTimeout(function(){
 					peerCount -= 1;
 					pcDisplay.innerHTML = peerCount.toString();
-				}, 25000);
+				}, 15000);
 					
 				lastPeer = new Date().getTime();
 				return;
@@ -201,7 +201,7 @@
 			setInterval(checkalive, 1000);
 			// process announcements over the relay network, and publish our own keep-alives to keep the channel alive
 			await ipfs.pubsub.subscribe("announce-circuit", processAnnounce);
-			setInterval(function(){ipfs.pubsub.publish("announce-circuit", "peer-alive");}, 25000);
+			setInterval(function(){ipfs.pubsub.publish("announce-circuit", "peer-alive");}, 15000);
 			
 			// block for translating an enter keypress while in the chat input as a message submission
 			document.getElementById("chatInput").addEventListener("keydown", async function(e) {

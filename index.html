@@ -78,12 +78,12 @@
 		function checkalive() {
 			now = new Date().getTime();
 			if (now-lastAlive >= 35000) {
-				dobootstrap(true); // sometimes we appear to be connected to the bootstrap nodes, but we're not, so let's try to reconnect
 				if (now-lastPeer >= 35000) {
 					document.getElementById("status-ball").style.color = "red";
 				} else {
 					document.getElementById("status-ball").style.color = "yellow";
 				}
+				dobootstrap(true); // sometimes we appear to be connected to the bootstrap nodes, but we're not, so let's try to reconnect
 			} else {
 				document.getElementById("status-ball").style.color = "lime";
 			}

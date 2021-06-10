@@ -2,4 +2,4 @@
 
 Simple all-in-one demo showing how to deploy a browser js-ipfs application.
 
-[Blog post](http://portal.thedisco.zone/testing/AGuidetoIPFSConnectivityinWebBrowsers.html#Getting-the-Code) with more information.
+[Blog post](https://blog.ipfs.io/2021-06-10-guide-to-ipfs-connectivity-in-browsers/) with more information.
